@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+#taskInput {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #333;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    background-color: #d9ffd9;
+}
+
+li.overdue {
+    background-color: #ffcccc;
+}
+
+button.remove-button {
+    background-color: #ff6666;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Nový styl pro checkbox */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.due-date {
+    margin-left: 20px;
+    font-style: italic;
+}
