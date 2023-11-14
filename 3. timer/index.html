@@ -1,0 +1,28 @@
+<!-- Countdown Timer HTML Structure -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Countdown Timer</title>
+</head>
+<body>
+    <div class="countdown">
+        <form id="countdownForm">
+            <input type="number" id="minutesInput" placeholder="Set time (minutes)" min="1" required>
+            <button type="submit">Set</button>
+            <button type="button" id="startButton">Start</button>
+        </form>
+        <div class="time-display">
+            <div class="time-block">
+                <span id="minutes">05</span> minutes
+            </div>
+            <div class="time-block">
+                <span id="seconds">00</span> seconds
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
