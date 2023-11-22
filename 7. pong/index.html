@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PONG Game</title>
+</head>
+
+<body>
+    <!-- Game Menu -->
+    <div id="menu">
+        <label for="difficulty">Choose difficulty:</label>
+        <select id="difficulty" name="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+
+        <label for="mode">Choose mode:</label>
+        <select id="mode" name="mode">
+            <option value="single">Computer</option>
+            <option value="multi">Player</option>
+        </select>
+
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <!-- Game Canvas -->
+    <canvas id="pongCanvas" width="600" height="400" style="display:none;"></canvas>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
